@@ -1,12 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to My Pages
 
-You can use the [editor on GitHub](https://github.com/chumwai217/allenchum.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I am Allen. Nice to meet you!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is my first time to use GitHub to write a page in Markdown langauge. 
+
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+They said Markdown is a lightweight and easy-to-use syntax.   
+Is it true? Let's check it out!
 
 ```markdown
 Syntax highlighted code block
@@ -24,7 +26,14 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
+
 ```
+
+I just notice that we can use emoji in Markdown. Let's try it!  
+* this is a camel. :camel:
+* this is a crown. :crown:
+* this is a sun. :sunny:
+* this is a moon. :full_moon:
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
