@@ -128,7 +128,7 @@ h1{
 .maincontain{
     position: relative;
 	height: 6600px;
-	top:-4px;
+	top:-18px;
 	background: #000000;
 	z-index: 6	;
 	display: flex;
