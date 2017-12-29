@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="grayscale.css" type="text/css" media="screen" charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand navbar-dark" href="#">Allen Chum</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a>About Me</a>
+            </li>
+            <li class="nav-item">
+                <a>Projects</a>
+            </li>
+            <li class="nav-item">
+                <a>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <audio src="audio/forest_rain.mp3" autoplay id="rain"></audio>
+
+
+
+    <div class="keyart" id="nonparallax">
+
+    </div>
+    <div class="keyart" id="parallax">
+        <div class="keyart_layer parallax" id="keyart-0" data-speed="2" style="transform: translate3d(px, 0px, 0px)"></div>
+        <!-- 00.0 -->
+        <div class="keyart_layer parallax" id="keyart-1" data-speed="5" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 12.5 -->
+        <div class="keyart_layer parallax" id="keyart-2" data-speed="15" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 25.0 -->
+        <div class="keyart_layer parallax" id="keyart-3" data-speed="16" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 37.5 -->
+        <div class="keyart_layer parallax" id="keyart-4" data-speed="26" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 50.0 -->
+        <div class="keyart_layer parallax" id="keyart-5" data-speed="36" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 62.5 -->
+        <div class="keyart_layer parallax" id="keyart-6" data-speed="49" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <div class="keyart_layer parallax" id="keyart-7" data-speed="55" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <div class="keyart_layer parallax" id="keyart-8" data-speed="63" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 75.0 -->
+        <div class="keyart_layer parallax" id="keyart-scrim"></div>
+        <div class="keyart_layer parallax" id="keyart-9" data-speed="69" style="transform: translate3d(0px, 0px, 0px)"></div>
+        <!-- 87.5 -->
+        <div class="keyart_layer parallax" id="keyart-10" data-speed="99"></div>
+        <!-- 100. -->
+    </div>
+    <div class="maincontain" data-scroll-speed='1'>
+        
+
+        <div class="welcome">
+            <h1 class="hide">There is raining outside...</h1>
+            <h5 class="hide">Please come in, and get warm.</h5>
+        </div>
+        <div class="hide" id="fire_outer">
+            <div class="hide" id="fire"></div>
+        </div>
+        <div class="whoAmI">
+            <h1 class="hide">Hi, I am Allen.</h1>
+            <h2 class="hide">I am an illustrator</h2>
+            <h3 class="hide">also</h3>
+            <h2 class="hide"> a Web Developer.</h2>
+        </div>
+
+        <div class="science">
+            <h3 class="hide">When I was child, I told my mum I want to be a scientist.</h3>
+            <h3 class="hide">I was in love with Math and Science.</h3>
+            <h4 class="hide">I always curious how to make things work, and study knowledge behind them.</h4>
+        </div>
+        <div class="sketch">
+            <h3 class="hide">Like all other teenage boys, I was in love with animation too.</h3>
+            <h3 class="hide">I started sketching characters since I was 10.</h3>
+            <h3 class="hide">Sketching is a language to me, expressing myself in graphical way.</h3>
+        </div>
+        <div class="web">
+            <h3 class="hide">Web Developing is a great combination of</h3>
+            <h3 class="hide">Technology and Design.</h3>
+            <h3 class="hide">We make contents simple, interactive and easy to read.</h3>
+        </div>
+
+        <div class="projects">
+            <h1 class="hide">My Projects</h1>
+            <hr class="hide"/>
+            <div class="projects_container hide">
+                <div class="project_item">
+                    <img class="project_icon" />
+                    <p class "project_text"></p>
+                </div>
+                <div class="project_item">
+                    <img class="project_icon" />
+                    <p class "project_text"></p>
+                </div>
+                <div class="project_item">
+                    <img class="project_icon" />
+                    <p class "project_text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h1 class="hide">Contact Me</h1>
+            <hr class="hide"/>
+            <div class="contact_container hide">
+                <div class="contact_item" id="email">
+                    <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+                    <p class="hide">chumwai@gmail.com</p>
+                </div>
+                <div class="contact_item" id="whatsapp">
+                    <i class="fa fa-3x fa-whatsapp" aria-hidden="true"></i>
+                    <p class="hide">+852 61544155</p>
+                </div>
+                <div class="contact_item" id="wechat">
+                    <i class="fa fa-3x fa-weixin" aria-hidden="true"></i>
+                    <p class="hide">ckw2334636129</p>>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="footer"></div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easyaudioeffects.1.0.0.min.js"></script>
+    <!-- <script type="text/javascript" src="soundmanager2.js"></script> -->
+    <script type="text/javascript" src="firewizard.js"></script>
+    <script type="text/javascript" src="thunderstrike.js"></script>
+    <script type="text/javascript" src="audio_scroll.js"></script>
+    <script type="text/javascript" src="text_scroll.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
