@@ -206,7 +206,7 @@ h1{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	width: 200%;
+	width: 90vw;
 
 	
 }
@@ -219,7 +219,7 @@ h1{
 }
 .contact{
 	margin-top: 200px;
-	width: 800px;
+	width: 60vw;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -326,5 +326,50 @@ hr {
 		position: absolute;
 		background-size: auto 600px;
 	}
+
+
+/* Banner */
+.banner{
+	position: absolute;
+	display: flex;
+	flex-flow: row;
+	top: 10vh;
+	left: 2vw;
+	text-align: centers;
+	color: #eeeeee;
+	z-index: 15;
 }
+.banner img{
+	display: block;
+}
+.banner p{
+	display: block;
+	align-self: flex-end;
+	padding: 0 20px;
+}
+.banner{
+	animation: twinkle 3s infinite;
+}
+@keyframes twinkle{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+/* Arrow */
+.arrow{
+	position: absolute;
+	top:90vh;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 15;
+}
+
 
