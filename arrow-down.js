@@ -15,7 +15,7 @@ $(function() {
       if ($(scene[i]).offset().top-100 > winTop) {
         $("html, body").animate(
           { scrollTop: $(scene[i]).offset().top},
-          3000
+          1800
         );
         return; 
       }

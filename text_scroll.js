@@ -17,7 +17,7 @@ $(window).scroll(function() {
 
     /* If the object is completely visible in the window, fade it it */
     if (middle_of_window > top_of_object) {
-      $(this).animate({ opacity: "0.1" }, 2000);
+      $(this).animate({ opacity: "0.15" }, 2000);
     }
   });
 
