@@ -46,6 +46,28 @@ h1{
 	margin: 10px;
 }
 
+.whoAmI h3{
+	margin: -10px;
+}
+
+.science .formula-sheet{
+	background:url(img/formula.jpg);
+	opacity: 0;
+	height: 75vh;
+	width: 100vw;
+	margin-top: -100px; 
+	position: absolute;
+	animation: appear 1s forwards;
+}
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0.1;
+	}
+}
+
 
 
 /* PARALLAX */
@@ -138,16 +160,13 @@ h1{
 }
 
 .whoAmI, .welcome, .science, .web, .sketch{
-	margin-top:300px;
+	padding-top:30vh;
 	display: flex;
     flex-flow: column;
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
 }
-
-
-
 #fire{
 	height: 500px;
 	width: 500px;
