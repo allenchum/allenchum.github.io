@@ -13,6 +13,17 @@ $(window).scroll( function(){
         }
         
     }); 
+
+    $('.appear').each(function(i){
+        var top_of_object = $(this).offset().top;
+        var middle_of_window = $(window).scrollTop() + $(window).height()*2/3;
+        
+        /* If the object is completely visible in the window, fade it it */
+        if( middle_of_window > top_of_object ){
+            
+            $(this).animate({'opacity':'0.1'},2000);
+        }
+    });
     
     var bottom_of_window = $(window).scrollTop() + $(window).height();
  
