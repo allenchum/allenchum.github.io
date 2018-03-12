@@ -15,9 +15,9 @@ $(window).scroll( function(){
     }); 
     
     var bottom_of_window = $(window).scrollTop() + $(window).height();
-    console.log(bottom_of_window);
+ 
     var bottom_of_fire = $("#fire_outer").offset().top + $("#fire_outer").height();
-    console.log(bottom_of_fire);
+    
     if(bottom_of_window > bottom_of_fire){
         $("#fire_outer").css("display","fixed");
     }

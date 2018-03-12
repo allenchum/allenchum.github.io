@@ -4,12 +4,10 @@
     $(document).scroll(function () {
         var deep = $("html").scrollTop()
         
-        console.log(deep);
         var vol = 1;
         if (deep > height*0.75 && vol>0) {
 			vol = 1-(deep-height)*3/height;
             rainDrop.volume = vol;
-            console.log(vol);
         }
 
     })
