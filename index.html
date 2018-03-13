@@ -22,7 +22,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#whoAmI">About Me</a>
                 </li>
@@ -35,7 +35,20 @@
             </ul>
         </div>
     </nav>
-    <audio src="audio/forest_rain.mp3" autoplay id="rain"></audio>
+    <audio src="audio/forest_rain.mp3" id="rain"></audio>
+    <audio src="audio/Storm_exclamation.mp3" id="thunder"></audio>
+
+    <div class="modal " id="modal-wrapper">
+        <div class="modal-content pop-up">
+            <img class="twinkle" src="img/headset.png" height="60px" width="60px">
+            <p>Welcome to MyCave.
+                <br/>This is a story about myself.
+                <br/>Please put on earphone.
+                <br/>Press OK when you're ready.</p>
+                <button class="btn btn-outline-light ok" onclick="document.getElementById('modal-wrapper').style.display='none'">OK</button>
+        </div>
+        
+    </div>
 
 
 
@@ -65,10 +78,7 @@
         <div class="keyart_layer parallax" id="keyart-10" data-speed="99"></div>
         <!-- 100. -->
     </div>
-    <div class="banner twinkle">
-        <img src="img/headset.png" height="60px">
-        <p>Put on earphone for best experience.</p>
-    </div>
+
     <div class="arrow" id="arrow-1">
         <a>
             <img src="img/arrow-down.png" height="30px">
@@ -129,7 +139,7 @@
         </div>
         <div class="contact scene" id="contact">
             <h1 class="hide">Contact Me</h1>
-            <hr class="hide" />
+            <hr class="hide"/>
             <div class="contact_container">
                 <div class="contact_item hide" id="email">
                     <i class="fa fa-3x fa-envelope zoom-in-1" aria-hidden="true"></i>
@@ -156,7 +166,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.easyaudioeffects.1.0.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <!-- <script type="text/javascript" src="soundmanager2.js"></script> -->
     <script type="text/javascript" src="firewizard.js"></script>
@@ -165,6 +175,7 @@
     <script type="text/javascript" src="text_scroll.js"></script>
     <script type="text/javascript" src="arrow-down.js"></script>
     <script type="text/javascript" src="smooth-scrolling.js"></script>
+    <script type="text/javascript" src="modal-control.js"></script>
 
 
 

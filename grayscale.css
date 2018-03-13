@@ -32,7 +32,7 @@ h1{
 .navbar{
     position: fixed;
 	z-index: 10;
-	background-color: transparent;
+	background-color: rgba(255,255,255,0.1);
 	border-bottom: 2px solid rgba(255,255,255,0.2);
 	width: 100%;
 	display: flex;
@@ -45,9 +45,66 @@ h1{
 .nav-item{
 	margin: 10px;
 }
-.navbar .collapse{
-	background: rgba(255,255,255,0.1);
+
+
+/* Modal Content Box */
+.modal-content {
+    background-color: rgba(0,0,0,0.4);
+    margin: 20vh auto 10vh auto;
+	border: 1px solid #888;
+	min-height: 40%;
+    max-width:70%; 
+	padding-bottom: 30px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
 }
+/* Add Zoom Animation */
+.pop-up{
+    animation: zoom 0.6s;
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.modal img{
+	display: block;
+	margin-bottom: 1%;
+}
+.modal p{
+	display: block;
+	padding: 1em;
+}
+.ok{
+	width: 20%;
+}
+@media(max-width:600px){
+	.modal-content{
+		font-size: 13pt;
+	}
+	.modal-content button{
+		font-size: 13pt;
+	}
+}
+.twinkle{
+	animation: twinkle 2s infinite;
+}
+@keyframes twinkle{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
 
 
 
@@ -129,75 +186,10 @@ h1{
    background-image: url('keyart_1920x1280/grayscale_1920x1280_layer10.png');
 }
 
-/* Banner */
-.banner{
-	position: absolute;
-	display: flex;
-	flex-flow: row;
-	top: 10vh;
-	left: 2vw;
-	text-align: centers;
-	color: #eeeeee;
-	z-index: 15;
-}
-.banner img{
-	display: block;
-}
-.banner p{
-	display: block;
-	align-self: flex-end;
-	padding: 0 20px;
-}
-.banner{
-	animation: twinkle 3s infinite;
-}
-@keyframes twinkle{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		opacity: 1;
-	}
-	100%{
-		opacity: 0;
-	}
-}
 
-@media (max-width: 600px){
-	.banner{
-		position: absolute;
-		display: flex;
-		flex-flow: row;
-		top: 50vh;
-		left: 10vw;
-		text-align: center;
-		color: #eeeeee;
-		z-index: 15;
-	}
-	.banner img{
-		display: block;
-	}
-	.banner p{
-		display: block;
-		align-self: flex-end;
-		padding: 0 20px;
-	}
-	.banner{
-		animation: twinkle 3s infinite;
-	}
-	@keyframes twinkle{
-		0%{
-			opacity: 0;
-		}
-		50%{
-			opacity: 1;
-		}
-		100%{
-			opacity: 0;
-		}
-	}
 
-}
+
+
 
 /* Arrow Down*/
 .arrow{
@@ -267,22 +259,22 @@ h1{
 	}
 	h1{
 		font-size: 30px;
-		margin: 10px;
+		margin: 17px;
 	}
 	h2{
-		margin-top: 15px;
+		margin: 15px;
 		font-size: 28px;
 	}
 	h3{
-		margin-top:13px;
+		margin:13px;
 		font-size: 22px;
 	}
 	h4{
-		margin-top:11px;
+		margin:11px;
 		font-size: 20px;
 	}
 	p{
-		margin-top: 10px;
+		margin: 10px;
 	}
  }
  .whoAmI h3{
