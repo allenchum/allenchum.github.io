@@ -282,13 +282,29 @@ h1{
 }
 
 .science .formula-sheet{
-	background:url(img/formula.jpg);
+	background:url(img/formula.png);
 	opacity: 0;
 	height: 75vh;
 	width: 100vw;
 	margin-top: -50px; 
 	position: absolute;
 
+}
+.sketch .sketch-paper{
+	background:url(img/doodle.png);
+	opacity: 0;
+	height: 100vh;
+	width: 100vw;
+	margin-top: -50px; 
+	position: absolute;
+}
+.web .wireframe{
+	background:url(img/wireframe.png);
+	opacity: 0;
+	height: 75vh;
+	width: 100vw;
+	margin-top: -50px; 
+	position: absolute;
 }
 .projects{
 	padding-top: 20vh;
